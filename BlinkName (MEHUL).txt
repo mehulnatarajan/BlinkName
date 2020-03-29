@@ -1,0 +1,130 @@
+int led2 = D7;
+
+void setup() {
+pinMode(led2, OUTPUT);
+}
+
+/*
+MEHUL is coded as per below 
+M  - -
+E  .
+H  ....
+U  ..-
+L  .-..
+
+Assumptions used to implement-
+- is 3 sec
+. is 1 sec
+Between codes of same letter - 1 sec
+Between letters - 3 sec
+*/
+
+void loop() {
+    digitalWrite(led2, HIGH); //The first dash of M
+
+    delay(3000);                
+
+    digitalWrite(led2, LOW);
+
+    delay(1000);            // between 1st and 2nd dash
+    
+    digitalWrite(led2, HIGH); //The second dash of M
+
+    delay(3000);            
+   
+    digitalWrite(led2, LOW);
+   
+    delay(3000);            //The pause between M and E
+
+    digitalWrite(led2, HIGH); //The dot for E
+   
+    delay(1000);
+   
+    digitalWrite(led2, LOW);
+   
+    delay(3000);            //The pause between E and H
+   
+    digitalWrite(led2, HIGH); //The first dot for the H
+   
+    delay(1000);
+   
+    digitalWrite(led2, LOW);
+   
+    delay(1000);            // between 1st and 2nd dot
+    
+    digitalWrite(led2, HIGH); //The second dot for the H
+   
+    delay(1000);            
+   
+    digitalWrite(led2, LOW);
+   
+    delay(1000);            // between 2nd  and 3rd dot
+    
+    digitalWrite(led2, HIGH); //The third dot for the H
+   
+    delay(1000);
+   
+    digitalWrite(led2, LOW);
+   
+    delay(1000);                // between 3rd  and 4th dot
+    
+    digitalWrite(led2, HIGH); //The fourth dot for the H
+   
+    delay(1000);
+   
+    digitalWrite(led2, LOW);
+   
+    delay(3000);            //Pause between H and U
+   
+    digitalWrite(led2, HIGH); //The first dot for the U
+   
+    delay(1000);
+   
+    digitalWrite(led2, LOW);
+   
+    delay(1000);                // between 1st and 2nd  dot
+    
+    digitalWrite(led2, HIGH); //The second dot for the U
+   
+    delay(1000);
+   
+    digitalWrite(led2, LOW);
+   
+    digitalWrite(led2, HIGH); //The dash for the U
+   
+    delay(3000);
+   
+    digitalWrite(led2, LOW);
+   
+    delay(3000);                //Pause between U and L
+   
+    digitalWrite(led2, HIGH); //the first dot for the L
+   
+    delay(1000);
+   
+    digitalWrite(led2, LOW);
+   
+    delay(1000);                // between 1nd and 2nd
+    
+    digitalWrite(led2, HIGH); //Dash for the L
+   
+    delay(3000);
+   
+    digitalWrite(led2, LOW);
+   
+    delay(1000);
+    
+    digitalWrite(led2, HIGH); //Third dot for the L
+   
+    delay(1000);
+   
+    digitalWrite(led2, LOW);
+   
+    delay(1000);
+    
+    digitalWrite(led2, HIGH);  //Fourth dot for the L
+   
+    delay(1000);
+   
+    digitalWrite(led2, LOW);
+}
